@@ -1,0 +1,28 @@
+{
+    "items_number": 1,
+    "items" : [
+        {
+            "id": 0,
+            "item_name": "Treecapitator",
+            "description": "A forceful Gold Axe which can break a large amount of logs in a single hit!",
+            "rairity" : "Epic",
+            "type": "tool",
+            "recipe": {
+                "A1": "ENCHANTED_OBSIDIAN:64",
+                "A2": "ENCHANTED_OBSIDIAN:64",
+                "A3": "ENCHANTED_OBSIDIAN:64",
+                "B1": "ENCHANTED_OBSIDIAN:64",
+                "B2": "JUNGLE_AXE:1",
+                "B3": "ENCHANTED_OBSIDIAN:64",
+                "C1": "ENCHANTED_OBSIDIAN:64",
+                "C2": "ENCHANTED_OBSIDIAN:64",
+                "C3": "ENCHANTED_OBSIDIAN:64",
+                "summary": { 
+                    "1": "ENCHANTED_OBSIDIAN:512",
+                    "2": "JUNGLE_AXE:1"
+                }
+            },
+            "other": "Requires: Obsidian VIII"
+        }
+    ]
+}
