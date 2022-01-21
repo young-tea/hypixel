@@ -1,0 +1,110 @@
+/* global styles */
+body{
+    background-color: #444;
+}
+html {
+    font-family: Montserrat,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    line-height: 1.5;
+}
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+*, a {
+    font-family: Montserrat,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+}
+
+a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #f3b924;
+}
+
+.shadow-lg {
+    box-shadow: 10px rgba(0,0,0,.1)!important;
+}
+
+/* content */
+
+.text-center {
+    text-align: center!important;
+}
+
+.relative {
+    position: relative!important;
+}
+.justify-between {
+    justify-content: space-between!important;
+}
+.flex {
+    display: flex!important;
+}
+
+.logo{
+    width: 30%;
+}
+
+.nav-link{
+    color: #FFF;
+    font-size: 1.25rem;
+}
+
+.nav-link:hover {
+    color: #f3b924;
+}
+
+.margin-10{
+    margin-bottom: 10%;
+}
+
+.card{
+    background-color: #353535;
+    border: none;
+    border-radius: 10px;
+}
+
+.card-title{
+    color: #FFF;
+}
+
+.card-img-top{
+    padding: 10%;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+
+
+
+
+/* scrollbar */
+
+/* the width of srollbar */
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+/*the background color of scrollbar*/
+
+::-webkit-scrollbar-track {
+  background: #606060;
+  border-radius: 15px;
+}
+
+/* the actual sccrollbar (part that is moving) */
+
+::-webkit-scrollbar-thumb {
+  background: #F59E0b;
+  border-radius: 50px;
+}
+
+/* on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f3b924;
+}

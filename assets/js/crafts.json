@@ -8,18 +8,27 @@
             "rairity" : "Epic",
             "type": "tool",
             "recipe": {
-                "A1": "ENCHANTED_OBSIDIAN:64",
-                "A2": "ENCHANTED_OBSIDIAN:64",
-                "A3": "ENCHANTED_OBSIDIAN:64",
-                "B1": "ENCHANTED_OBSIDIAN:64",
-                "B2": "JUNGLE_AXE:1",
-                "B3": "ENCHANTED_OBSIDIAN:64",
-                "C1": "ENCHANTED_OBSIDIAN:64",
-                "C2": "ENCHANTED_OBSIDIAN:64",
-                "C3": "ENCHANTED_OBSIDIAN:64",
-                "summary": { 
-                    "1": "ENCHANTED_OBSIDIAN:512",
-                    "2": "JUNGLE_AXE:1"
+                "1": {
+                    "ENCHANTED_OBSIDIAN": "512"
+                },
+                "2":{
+                    "JUNGLE_AXE": "1"
+                }
+            },
+            "other": "Requires: Obsidian VIII"
+        },
+        {
+            "id": 1,
+            "item_name": "JungleAxe",
+            "description": "A powerful Wooden Axe which can break multiple logs in a single hit!",
+            "rairity" : "Epic",
+            "type": "tool",
+            "recipe": {
+                "1": {
+                    "ENCHANTED_JUNGLE_LOG": "3"
+                },
+                "2":{
+                    "STICK": "2"
                 }
             },
             "other": "Requires: Obsidian VIII"
