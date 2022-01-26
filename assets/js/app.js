@@ -1,3 +1,7 @@
-import BZproducts from './bz-data.js'
+import jungleAxePrice from './jungle-axe.js'
 
-console.log(BZproducts)
+let jungleAxeCraftPrice = jungleAxePrice;
+console.log(jungleAxeCraftPrice);
+
+//getting elenemts
+document.getElementById('craft-price').innerHTML = `${jAxePrice} coins`;
