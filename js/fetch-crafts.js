@@ -2,7 +2,7 @@
 import { readFileSync } from 'fs';
 
 //getting crafts
-const rawdata = readFileSync('./crafts.json');
+const rawdata = readFileSync('crafts.json');
 let crafts = JSON.parse(rawdata);
 
 //exporting ctafts
