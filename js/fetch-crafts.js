@@ -1,11 +1,21 @@
-//importing file system
-import { readFileSync } from 'fs';
+//importing modules
+import fetch from 'node-fetch';
 
-//getting crafts
-const rawdata = readFileSync('crafts.json');
-let crafts = JSON.parse(rawdata);
+//variables
+const apiLink = 'https://young-tea.github.io/hypixel-crafts-api/crafts.json';
 
-//exporting ctafts
+//function that is fetching bazaar data
+async function fetchBZ(apiLink) {
+    const response = await fetch(apiLink);
+    const data = await response.json();
+
+    return(data)
+};
+
+//bazaar data
+const crafts = await fetchBZ(apiLink);
+
+//exporting bazaar data
 export default crafts;
 
-//this file is fetching crafts and exporting it
+//this is file that fetches data from bazaar

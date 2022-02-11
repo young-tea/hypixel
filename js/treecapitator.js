@@ -21,8 +21,6 @@ let allObsidianPrice = obsidianNum * obsidianPrice;
 //calculating craft price
 let treecapitatorPrice = allObsidianPrice + jungleAxePrice;
 
-console.log(treecapitatorPrice);
-
 //exporting craft price
 export default treecapitatorPrice;
 

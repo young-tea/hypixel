@@ -1,20 +1,34 @@
-import express from 'express'
-import jungleAxePrice from '/github/hypixel/js/jungle-axe.js'
+import express from 'express';
+import nunjucks from 'nunjucks';
+
+
+import treecapitatorPrice from './js/treecapitator.js';
+import BINdata from './js/ah-data.js'
+
+let treecap = treecapitatorPrice;
+let treecapBIN = BINdata.TREECAPITATOR_AXE
+
 
 const app = express();
 
-let jungleAxe = jungleAxePrice;
+app.use(express.static('public'));
 
-app.use( express.static( "assets" ) );
+let value = 545
 
-app.set('view engine', 'ejs')
-
-app.get('/', (req, res) => {
-    res.render('tools/jungle-axe', { jungleAxe })
+nunjucks.configure('views', {
+    autoescape: true,
+    express: app
 });
 
-const port = process.env.PORT || 3000;
+app.get('/', function(req, res) {
+    res.render('index.html');
+});
 
+app.get('/items/tools/treecapitator', function(req, res) {
+    res.render('items/tools/treecapitator.html', { treecap, treecapBIN });
+});
+
+const port = 3000;
 app.listen(port, () => {
-    console.log(`  Listening  on http://locallhost:${port}`)
+    console.log(`listening to ${port}`)
 });
